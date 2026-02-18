@@ -9,7 +9,7 @@ console.log('Gemini Plus: sidepanel.js loading at document_start...');
 // 1. Immediate style injection using document.documentElement
 const injectStyle = () => {
     const css = `
-        hallucination-disclaimer { display: none !important; visibility: hidden !important; height: 0 !important; overflow: hidden !important; }
+        hallucination-disclaimer, .boqOnegoogleliteOgbOneGoogleBar { display: none !important; visibility: hidden !important; height: 0 !important; overflow: hidden !important; }
         body { padding-bottom: 16px !important; }
     `;
     const style = document.createElement('style');
