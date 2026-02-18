@@ -4,9 +4,22 @@
     "version": "1.0",
     "description": "An extension hosting Gemini in the side panel.",
     "permissions": [
-        "sidePanel"
+        "sidePanel",
+        "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "https://gemini.google.com/*"
     ],
     "side_panel": {
         "default_path": "sidepanel.html"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
     }
 }
